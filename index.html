@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site Responsivo</title>
+</head>
+<body>
+    <section>
+        <div class="content">
+            <div>
+                <h2>Cristiano Ronaldo</h2>
+                <p>Cristiano Ronaldo dos Santos Aveiro (Funchal, 5 de fevereiro de 1985) conhecido como Cristiano Ronaldo ou "CR7" (em referência ao número de sua camisa) é um futebolista português que atua como ponta-esquerda ou atacante. 
+                    Atualmente joga pela Juventus e pela Seleção Portuguesa.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="imgBx">
+            <img src="img/cristiano_ronaldo.png">
+        </div>
+        <ul class="nav" id="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">About</a></li>
+            <li><a href="#">Performance</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Ranking</a></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/Cristiano" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com/cristiano" target="_blank">Twitter</a></li>
+            <li><a href="https://www.instagram.com/cristiano/?hl=pt-br" target="_blank">Instagram</a></li>
+        </ul>
+    </section>    
+    <span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+    <script>
+        function menuToggle() {
+            var nav = document.getElementById("nav");
+            nav.classList.toggle('active')
+            var toggle = document.getElementById("toggle");
+            toggle.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
